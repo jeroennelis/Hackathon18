@@ -1,0 +1,9 @@
+.card,
+.cardLink {
+  min-height: 200px;
+  text-decoration: none !important;
+}
+.card-title {
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=pickCategory.css.map */
