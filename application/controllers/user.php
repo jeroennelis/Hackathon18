@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-class Resident extends CI_Controller {
+class user extends CI_Controller {
     
     public function loadLanguage(){
         $this->load->helper('language');
@@ -19,32 +19,29 @@ class Resident extends CI_Controller {
             $this->lang->load('EN', 'english');
         }
     }
-    
-    //TODO: this is not yet used (now we use 'Welcome.index()' )
-    public function index(){
-        $_SESSION['room_number'] = -1;
-        $this->load->helper('language');
-        $this->loadLanguage();
-        
-        $this->load->view('roomnumber');
-        echo 'test';
-    }
-    
+     
     //gets all the residents from given roomnumber and goes to the 'press on your picture' page
     //session: array with all residentID and pictures from that roomnumber
-    public function login(){
+    public function login(){        
         $this->load->model('SQLManager');
-        $room_number = $_POST["number"];                        //TODO check if post is not empty
-        $room_info = $this->SQLManager->get_room($room_number);
+        
+        $username = $_POST["username"];                        //TODO check if post is not empty
+        $password = $_POST["password"];
+        
+        
+        
+        $user_info = $this->SQLManager->login($username, $password);
+        
         $this->loadLanguage();
-        if(sizeof($room_info)==0)
+        
+        if(sizeof($user_info)==0)
         {
-            $_SESSION['room_number'] = '-2';
-            $this->load->view('roomnumber');
+            //$_SESSION['room_number'] = '-2';
+            $this->load->view('login');
         }else{
-            $_SESSION['room_info'] = $room_info;
-            $_SESSION['room_number'] = $room_number;
-            $this->load->view('login');  
+//            $_SESSION['room_info'] = $room_info;
+//            $_SESSION['room_number'] = $room_number;
+            $this->load->view('home');  
         }
        
     }

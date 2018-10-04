@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     Change this for your own pc, if you upload to server put
 | http://a17-webapps10.studev.groept.be/elderly/
 */
-$config['base_url'] = 'http://localhost/a17_webapps10';
+$config['base_url'] = 'http://localhost/hackaton18';
 
 /*
 |--------------------------------------------------------------------------

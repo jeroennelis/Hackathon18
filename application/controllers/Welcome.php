@@ -19,14 +19,13 @@ class Welcome extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
     
-    //TODO: delete this page and use the Resident-controller
 	public function index()
 	{
             $_SESSION['room_number'] = -1;
             $this->load->helper('language');
             $this->lang->load('NL', 'nederlands');
             $_SESSION['language'] = "Nederlands";
-            $this->load->view('roomnumber');
+            $this->load->view('login');
             
 	}
         

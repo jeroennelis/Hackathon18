@@ -20,37 +20,14 @@
     <link rel="stylesheet/less" type="text/css"
           href="<?php echo base_url(); ?>assets/bootStrap4/css/elderlyStyle.less"/>
 
+
+</head>
+<body>
 <!-- Page Content -->
 <!-- title-->
-
-<body>
 <div class="container">
     
-    <form action="<?php echo base_url(); ?>index.php/user/login" method='post'>
-        <div class="row">
-            <?php echo lang('login_username')?>
-        </div>
-        <div class="row">
-            <input type="username" name="username">
-                
-            </input>
-        </div>
-        <div class="row">
-            <?php echo lang('login_password')?>
-        </div>
-        <div class="row">
-            <input type="password" name="password">
-                
-            </input>
-        </div>
-        <div class="row">
-            <button type="button, submit" class="btn btn-primary confirmButton">
-                Bevestig
-            </button>
-        </div>
-            
-
-    </form>
+    home
     
 </div>
 </body>
