@@ -18,7 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet/less" type="text/css"
-          href="<?php echo base_url(); ?>assets/bootStrap4/css/elderlyStyle.less"/>
+          href="<?php echo base_url(); ?>assets/bootStrap4/css/login.less"/>
 
 <!-- Page Content -->
 <!-- title-->
@@ -26,31 +26,20 @@
 <body>
 <div class="container">
     
-    <form action="<?php echo base_url(); ?>index.php/user/login" method='post'>
-        <div class="row">
-            <?php echo lang('login_username')?>
-        </div>
-        <div class="row">
-            <input type="username" name="username">
-                
-            </input>
-        </div>
-        <div class="row">
-            <?php echo lang('login_password')?>
-        </div>
-        <div class="row">
-            <input type="password" name="password">
-                
-            </input>
-        </div>
-        <div class="row">
-            <button type="button, submit" class="btn btn-primary confirmButton">
-                Bevestig
-            </button>
-        </div>
-            
-
-    </form>
+    <div class="wrapper">
+        <form class="form-signin" action="<?php echo base_url(); ?>index.php/user/login" method='post'>       
+          <h2 class="form-signin-heading">Please login</h2>
+          <input type="text" class="form-control" name="username" placeholder="username" required="" autofocus="" name="username"/>
+          <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+          
+          <button class="btn btn-lg btn-primary btn-block" type="button, submit">Login</button>   
+        </form>
+    </div>
+    
+<!--    <div>
+        <a href="<?php echo base_url(); ?>index.php/user/SetDutch">NL</a>
+        <a href="<?php echo base_url(); ?>index.php/user/SetEnglish">ENG</a>
+    </div>-->
     
 </div>
 </body>

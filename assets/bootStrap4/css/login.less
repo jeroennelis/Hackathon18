@@ -224,12 +224,15 @@ Buttons
 	color: #fff !important;
 	background-color: @grapeButton;
 	border-color: @grapeButton;
+        margin: 0 auto;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
 	color: #fff;
 	background-color: @grapeButton2;
 	border-color: @grapeButton;
+        display: block;
+        margin: 0 auto;
 }
 
 .confirmButton{
@@ -413,4 +416,42 @@ footer {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+body {
+	background: #eee !important;	
+}
+
+.wrapper {	
+	margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);  
+
+  .form-signin-heading,
+	.checkbox {
+	  margin-bottom: 30px;
+	}
+
+	.checkbox {
+	  font-weight: normal;
+	}
+
+	input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
+
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
 }

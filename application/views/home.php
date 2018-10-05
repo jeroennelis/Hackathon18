@@ -16,19 +16,22 @@
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url(); ?>assets/bootStrap4/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet/less" type="text/css"
-          href="<?php echo base_url(); ?>assets/bootStrap4/css/elderlyStyle.less"/>
-
 
 </head>
 <body>
-<!-- Page Content -->
-<!-- title-->
-<div class="container">
-    
-    home
-    
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="jumbotron">
+				<h2>
+					Home Page!
+				</h2>
+				<p>
+					This is a template for the hackaton!
+				</p>
+			</div>
+		</div>
+	</div>
 </div>
 </body>
 

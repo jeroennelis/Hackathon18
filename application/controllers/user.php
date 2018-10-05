@@ -19,6 +19,20 @@ class user extends CI_Controller {
             $this->lang->load('EN', 'english');
         }
     }
+    
+    public function SetDutch()
+    {
+        $_SESSION['language'] = "Nederlands";
+        $this->lang->load('NL', 'nederlands');
+        redirect($this->uri->uri_string());
+    }
+    
+    public function SetEnglish()
+    {
+        $_SESSION['language'] = "English";
+        $this->lang->load('EN', 'english');
+        redirect($this->uri->uri_string());
+    }
      
     //gets all the residents from given roomnumber and goes to the 'press on your picture' page
     //session: array with all residentID and pictures from that roomnumber
