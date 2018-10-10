@@ -22,13 +22,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | If you need to allow multiple domains, remember    that this file is still
 | a PHP script and you can easily do that on your own.
 |
-
-
-
-    Change this for your own pc, if you upload to server put
-| http://a17-webapps10.studev.groept.be/elderly/
+ * 
+ * 
 */
-$config['base_url'] = 'http://localhost/hackaton18';
+$config['base_url'] = 'http://localhost/hackathon18';
 
 /*
 |--------------------------------------------------------------------------

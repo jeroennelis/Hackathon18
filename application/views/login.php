@@ -19,6 +19,8 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet/less" type="text/css"
           href="<?php echo base_url(); ?>assets/bootStrap4/css/login.less"/>
+    
+    <link rel="icon" href="<?php echo base_url(); ?>assets/img/icon.png">
 
 <!-- Page Content -->
 <!-- title-->
@@ -28,18 +30,18 @@
     
     <div class="wrapper">
         <form class="form-signin" action="<?php echo base_url(); ?>index.php/user/login" method='post'>       
-          <h2 class="form-signin-heading">Please login</h2>
-          <input type="text" class="form-control" name="username" placeholder="username" required="" autofocus="" name="username"/>
-          <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+          <h2 class="form-signin-heading"><?php echo lang('login_message')?></h2>
+          <input type="text" class="form-control" name="username" placeholder="<?php echo lang('login_username')?>" required="" autofocus="" name="username"/>
+          <input type="password" class="form-control" name="password" placeholder="<?php echo lang('login_password')?>" required=""/>      
           
-          <button class="btn btn-lg btn-primary btn-block" type="button, submit">Login</button>   
+          <button class="btn btn-lg btn-primary btn-block" type="button, submit"><?php echo lang('login_login')?></button>   
         </form>
     </div>
     
-<!--    <div>
+    <div>
         <a href="<?php echo base_url(); ?>index.php/user/SetDutch">NL</a>
         <a href="<?php echo base_url(); ?>index.php/user/SetEnglish">ENG</a>
-    </div>-->
+    </div>
     
 </div>
 </body>
